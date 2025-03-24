@@ -128,6 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CalcApproxCDF.cpp" />
+    <ClCompile Include="EuclidAlgoToFindGCD.cpp" />
+    <ClCompile Include="FindPrime.cpp" />
     <ClCompile Include="findQuadRoots.cpp" />
     <ClCompile Include="MainEntry.cpp" />
   </ItemGroup>
