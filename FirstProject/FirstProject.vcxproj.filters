@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FirstProject.cpp">
+    <ClCompile Include="findQuadRoots.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
