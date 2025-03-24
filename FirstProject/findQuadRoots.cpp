@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+void static findQuadRoots() {
 	double a = 0.0, b = 0.0, c =0.0;
 	double root = 0.0;
 	double x1 = 0.0, x2 = 0.0, x = 0.0;
@@ -45,6 +45,7 @@ int main() {
 				}
 			}
 		}
+
 	}
 
 	

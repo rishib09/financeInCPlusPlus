@@ -18,5 +18,11 @@
     <ClCompile Include="findQuadRoots.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MainEntry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalcApproxCDF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
