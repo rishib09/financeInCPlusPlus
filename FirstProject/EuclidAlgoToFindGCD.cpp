@@ -1,5 +1,5 @@
 #include<iostream>
-
+#include<iomanip>
 using namespace std;
 
 void static EuclidAlgoToFindGCD() {
@@ -19,4 +19,18 @@ void static EuclidAlgoToFindGCD() {
 	} while (m > 0 && m <= n);
 
 	cout << "Greatest common denominator for the input values is : " << temp << endl;
+	//testing reformatting of output
+	cout.setf(ios::fixed);
+	cout.precision(3);
+	cout << " The value of temp now changes to : " << sqrt(temp) << endl;
+
+	cout << setiosflags(ios::left);
+	cout.width(20);
+
+	int number = 0;
+
+	for (number = 1; number <= 10; number = number + 1) {
+		cout.width(20);
+		cout << "number with following precision : " << sqrt(number) << endl;
+	}
 }
