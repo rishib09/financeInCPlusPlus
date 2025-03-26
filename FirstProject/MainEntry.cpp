@@ -5,6 +5,8 @@ using namespace std;
 #include "CalcApproxCDF.cpp";
 #include "EuclidAlgoToFindGCD.cpp";
 #include "FindPrime.cpp";
+#include "BasicBSEOptionPricer.cpp";
+#include "MonteCarloBoxMullerTransformation.cpp";
 
 enum EXECFUNC
 {
@@ -12,7 +14,8 @@ enum EXECFUNC
 	CALCCDF,
 	FINDGCD,
 	FINDPRIME,
-
+	BSECALLOPTIONPRICING,
+	MONTECARLOBOXMULLERTRANSFORMATION,
 	INVALID
 };
 
@@ -21,7 +24,8 @@ EXECFUNC getExecFuncFromInput(const string& input) {
 	if ((input == "2") || (input == "CALCCDF")) return EXECFUNC::CALCCDF;
 	if ((input == "3") || (input == "FINDGCD")) return EXECFUNC::FINDGCD;
 	if ((input == "4") || (input == "FINDPRIME")) return EXECFUNC::FINDPRIME;
-
+	if ((input == "5") || (input == "BSECALLOPTIONPRICING")) return EXECFUNC::BSECALLOPTIONPRICING;
+	if ((input == "6") || (input == "MONTECARLOBOXMULLERTRANSFORMATION")) return EXECFUNC::MONTECARLOBOXMULLERTRANSFORMATION;
 	return EXECFUNC::INVALID;
 }
 
@@ -34,6 +38,8 @@ int main() {
 	cout << "2. CALCCDF " << endl;
 	cout << "3. FINDGCD " << endl;
 	cout << "4. FINDPRIME" << endl;
+	cout << "5. BSECALLOPTIONPRICING" << endl;
+	cout << "6. MONTECARLOBOXMULLERTRANSFORMATION" << endl;
 	cout << "============================================== \n" << endl;
 	cin >> func;
 
@@ -50,6 +56,12 @@ int main() {
 			break;
 		case EXECFUNC::FINDPRIME:
 			FindPrime();
+			break;
+		case EXECFUNC::BSECALLOPTIONPRICING:
+			BasicBSEOptionPricer();
+			break;
+		case EXECFUNC::MONTECARLOBOXMULLERTRANSFORMATION:
+			MonteCarloBoxMullerTransformation();
 			break;
 		case EXECFUNC::INVALID:
 				cout << "Please enter the valid number or function name (ALL CAPS) from the list to execute the function!";

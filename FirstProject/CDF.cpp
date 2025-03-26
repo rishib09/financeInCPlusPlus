@@ -1,8 +1,7 @@
-#include<iostream>;
-#include<cmath>;
+#include<cmath>
 using namespace std;
 
-void static CalcApproxCDF(const double rv = 0.0) {
+double CDF(double X) {
 	/*
 	CDF of Normal distribution is given by the following formula:
 	N(x) = 1/sqrt(2*pi)*Integration from -inf to +inf of exp((-1/2) * x^2)dx
@@ -22,21 +21,13 @@ void static CalcApproxCDF(const double rv = 0.0) {
 		a4 = -1.821255978,
 		a5 = 1.330274429; //define all constants a(i)
 
-	double X = 0, x = 0; // define random variable X and its absolute value x
+	double  x = 0; // define RV's absolute value x
 	double k = 0;
 	double N, CDF, n;
 
-	if (rv == 0.0) {
-		cout << "Enter the value of random variable X : " << endl;
 
-		cin >> X;
 
-	}
-	else {
-		X = rv;
-	}
-	
-	
+
 
 	x = fabs(X); //we set x to be the absolute value of R.V. X
 
@@ -52,7 +43,8 @@ void static CalcApproxCDF(const double rv = 0.0) {
 		// we calc for +ve X and then use the symmetry property of the distribution to obtain the CDF for -ve values
 		CDF = 1 - N;
 
-		cout << "CDF is calculated to be : " << CDF << endl;
+
 	}
 
+	return CDF;
 }

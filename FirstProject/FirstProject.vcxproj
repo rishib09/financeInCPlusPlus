@@ -127,11 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BasicBSEOptionPricer.cpp" />
+    <ClCompile Include="BoxMullerTransformation.cpp" />
     <ClCompile Include="CalcApproxCDF.cpp" />
+    <ClCompile Include="CDF.cpp" />
     <ClCompile Include="EuclidAlgoToFindGCD.cpp" />
     <ClCompile Include="FindPrime.cpp" />
     <ClCompile Include="findQuadRoots.cpp" />
     <ClCompile Include="MainEntry.cpp" />
+    <ClCompile Include="MonteCarloBoxMullerTransformation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoxMullerTransformation.h" />
+    <ClInclude Include="CDF.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
