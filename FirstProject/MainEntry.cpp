@@ -7,6 +7,8 @@ using namespace std;
 #include "FindPrime.cpp";
 #include "BasicBSEOptionPricer.cpp";
 #include "MonteCarloBoxMullerTransformation.cpp";
+#include "BasicMeanStdCalc.cpp";
+#include "GaussianEliminationMethod.cpp";
 
 enum EXECFUNC
 {
@@ -16,6 +18,8 @@ enum EXECFUNC
 	FINDPRIME,
 	BSECALLOPTIONPRICING,
 	MONTECARLOBOXMULLERTRANSFORMATION,
+	BASICMEANSTDCALC,
+	GAUSSIANELIMINATIONMETHOD,
 	INVALID
 };
 
@@ -26,6 +30,8 @@ EXECFUNC getExecFuncFromInput(const string& input) {
 	if ((input == "4") || (input == "FINDPRIME")) return EXECFUNC::FINDPRIME;
 	if ((input == "5") || (input == "BSECALLOPTIONPRICING")) return EXECFUNC::BSECALLOPTIONPRICING;
 	if ((input == "6") || (input == "MONTECARLOBOXMULLERTRANSFORMATION")) return EXECFUNC::MONTECARLOBOXMULLERTRANSFORMATION;
+	if ((input == "7") || (input == "BASICMEANSTDCALC")) return EXECFUNC::BASICMEANSTDCALC;
+	if ((input == "8") || (input == "GAUSSIANELIMINATIONMETHOD")) return EXECFUNC::GAUSSIANELIMINATIONMETHOD;
 	return EXECFUNC::INVALID;
 }
 
@@ -40,6 +46,8 @@ int main() {
 	cout << "4. FINDPRIME" << endl;
 	cout << "5. BSECALLOPTIONPRICING" << endl;
 	cout << "6. MONTECARLOBOXMULLERTRANSFORMATION" << endl;
+	cout << "7. BASICMEANSTDCALC" << endl;
+	cout << "8. GAUSSIANELIMINATIONMETHOD" << endl;
 	cout << "============================================== \n" << endl;
 	cin >> func;
 
@@ -62,6 +70,12 @@ int main() {
 			break;
 		case EXECFUNC::MONTECARLOBOXMULLERTRANSFORMATION:
 			MonteCarloBoxMullerTransformation();
+			break;
+		case EXECFUNC::BASICMEANSTDCALC:
+			BasicMeanStdCalc();
+			break;
+		case EXECFUNC::GAUSSIANELIMINATIONMETHOD:
+			GaussianEliminationMethod();
 			break;
 		case EXECFUNC::INVALID:
 				cout << "Please enter the valid number or function name (ALL CAPS) from the list to execute the function!";

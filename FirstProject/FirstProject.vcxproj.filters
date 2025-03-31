@@ -42,12 +42,33 @@
     <ClCompile Include="BoxMullerTransformation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BasicMeanStdCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicMeanStdCalcUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LookBackOptionPricing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="max_min.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GaussianEliminationMethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CDF.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BoxMullerTransformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicMeanStdCalcUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="max_min.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

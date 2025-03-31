@@ -128,18 +128,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BasicBSEOptionPricer.cpp" />
+    <ClCompile Include="BasicMeanStdCalc.cpp" />
+    <ClCompile Include="BasicMeanStdCalcUtil.cpp" />
     <ClCompile Include="BoxMullerTransformation.cpp" />
     <ClCompile Include="CalcApproxCDF.cpp" />
     <ClCompile Include="CDF.cpp" />
     <ClCompile Include="EuclidAlgoToFindGCD.cpp" />
     <ClCompile Include="FindPrime.cpp" />
     <ClCompile Include="findQuadRoots.cpp" />
+    <ClCompile Include="GaussianEliminationMethod.cpp" />
+    <ClCompile Include="LookBackOptionPricing.cpp" />
     <ClCompile Include="MainEntry.cpp" />
+    <ClCompile Include="max_min.cpp" />
     <ClCompile Include="MonteCarloBoxMullerTransformation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BasicMeanStdCalcUtil.h" />
     <ClInclude Include="BoxMullerTransformation.h" />
     <ClInclude Include="CDF.h" />
+    <ClInclude Include="max_min.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
